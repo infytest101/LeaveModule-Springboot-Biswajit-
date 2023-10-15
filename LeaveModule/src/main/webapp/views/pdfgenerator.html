@@ -1,0 +1,67 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+<%@page import="java.util.ArrayList" %>
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Leave Module</title>
+
+<script type="text/javascript" charset="utf8"src="https://code.jquery.com/jquery-3.3.1.js"></script>
+<script type="text/javascript" charset="utf8"src="https://cdn.datatables.net/1.10.16/js/jquery.dataTables.min.js"></script>
+<script type="text/javascript" charset="utf8"src="https://cdn.datatables.net/1.10.16/js/dataTables.jqueryui.min.js"></script>
+
+<link rel="stylesheet" type="text/css"href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css" />
+<link rel="stylesheet" type="text/css"href="https://cdn.datatables.net/1.10.16/css/dataTables.jqueryui.min.css" />
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
+ 
+<style>
+	h2{
+	
+	text-align :center;
+	
+	} 
+	#mailbtn{
+	display : flex;
+	}
+</style>
+</head>
+
+<body>
+		<h2>Leave Status Module</h2>
+
+		<label> Employee Name :</label><select id="mycombo" name="roomtype"></select><br>
+		
+		<div id ="deatilsId">
+		<div><label> Designation : </label> <span id="designation"></span><br></div>
+		<div><label> Email : </label><span id="email"></span><br></div>
+		<div><label> Mobile : </label><span id="mobile"></span><br></div>
+		<div><label> Band : </label><span id="band"></span><br></div>
+		</div>
+
+
+		<table id="Hotel" class="table table-bordered table-striped"style="width: 100%">
+		<thead>
+			<tr>
+				<th id="tId">SL#</th>
+				<th id="leaveType">Leave Type</th>
+				<th id="entitled">Entitled</th>
+				<th id="applied">Applied</th>
+				<th id="granted">Granted</th>
+				<th id="rejected">Rejected</th>
+				<th id="balance">Balance</th>
+
+				
+			</tr>
+		</thead>
+		<tbody>
+		</tbody>
+		</table>
+
+<button  type="submit"  id ="mailbtn" onclick="mailToHR()" class="btn btn-warning">mail to HR as .pdf</button>
+
+
+
+</body>
+</html>
