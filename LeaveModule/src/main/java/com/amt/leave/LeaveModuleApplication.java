@@ -12,7 +12,8 @@ public class LeaveModuleApplication {
 		SpringApplication.run(LeaveModuleApplication.class, args);
 		Logger logger = LoggerFactory.getLogger(LeaveModuleApplication.class);
 		logger.info("<<<<<<<<<<<<<<<<<<<appication Started>>>>>>>>>>>>>>>");
-		logger.info("<<<<<<<<<<<<<<<<<<<>>>>>>>>>>>>>>>");
+		logger.info("<<<<<<<<<<<<<<<<<<<added new logger.info for testing>>>>>>>>>>>>>>>");
+		
 	}
 
 }
